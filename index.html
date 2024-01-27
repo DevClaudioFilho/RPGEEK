@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="styles/default.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/header.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Components Styles -->
+  <link rel="stylesheet" href="styles/listCards.css">
+  <link rel="stylesheet" href="styles/clock.css">
+  <link rel="stylesheet" href="styles/slideshow.css">
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin="anonymous"></script>
+
+  <script src="components/index.js"></script>
+
+  <title>RPGeeks</title>
+</head>
+
+<body>
+  <header class="header_container">
+    <div class="content_container header_content">
+      <img src="assets/logos/logo.png" alt="Logo Game" />
+      <nav>
+        <ul id="list_links">
+          <li><a href="#description_container">Sobre</a></li>
+          <li><a href="#system_container">Sistemas</a></li>
+          <li><a href="#software_container">Ferramentas</a></li>
+          <li><a href="#contact_container">Contacto</a></li>
+
+        </ul>
+        <a href="javascript:void(0);" class="icon_nav" onclick="showHeader()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="ClocksComponents"></div>
+    <section class="slideshow" id="slideshowComponents"></section>
+    <section class="content_container">
+      <div class="description_container" id="description_container">
+        <h1 class="title">Um universo a se explorar...</h1>
+        <p>
+          O RPG de mesa, ou RPG de papel e caneta, é um jogo que lembra muito os clássicos jogos de tabuleiro, porém com
+          possibilidades mais amplas. Do inglês, a sigla RPG significa "Role Playing Game", um jogo de interpretar
+          papéis.
+          Neste caso o jogador não é apenas um pino andando em casas de um tabuleiro, ele interpreta um personagem, com
+          emoções,
+          falas e habilidades enquanto atravessa um mundo fantástico. Ensinaremos aqui como jogar RPG de mesa.
+        </p>
+      </div>
+    </section>
+    <section class="content_container ">
+      <div class="system_container" id="system_container">
+        <h1 class="title">...Com diversas sistemas</h1>
+        <ul class="cards_lists" id="listCardsComponents"></ul>
+      </div>
+    </section>
+    <section class="content_container ">
+      <div class="software_container" id="software_container">
+        <h1 class="title">E ferramentas para modelos clássicos ou mais imersivos...</h1>
+        <ul>
+          <li>
+            <a href="https://discord.com/">
+              <img src="assets/logos/discord.ico" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="https://roll20.net/">
+              <img src="assets/logos/rool20.ico" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="https://firecast.app/pt_br/features/">
+              <img src="assets/logos/firecast.png" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="content_container ">
+      <div class="contact_container">
+        <h1 class="title">Estamos aqui para te ajudar</h1>
+        <div class="contact_content">
+          <div id="contactFormComponents"></div>
+          <img src="https://www.rederpg.com.br/wp/wp-content/uploads/2021/01/fantasy-sowingrumors-864x467.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer_container">
+    <div class="content_container footer_content">
+      <nav>
+        <h2 class="title">
+          Navegação:
+        </h2>
+        <ul>
+          <li><a href="#description_container">Sobre</a></li>
+          <li><a href="#system_container">Sistemas</a></li>
+          <li><a href="#software_container">Ferramentas</a></li>
+          <li><a href="#contact_container">Contacto</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h2 class="title">
+          Redes Sociais:
+        </h2>
+        <ul>
+          <li><a href="https://www.instagram.com/claudio_martinss//">Instagram</a></li>
+          <li><a href="https://www.facebook.com/claudio.martins.39">Facebook</a></li>
+          <li><a href=" https://wa.me/35961358647">WhatsApp</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h2 class="title">
+          Informações Uteis:
+        </h2>
+        <ul>
+          <li><a href="">Termos e Condições</a></li>
+          <li><a href="https://www.livroreclamacoes.pt/Inicio/">Livro de reclamações</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+<!-- React Components -->
+<script src="components/clock.js"></script>
+<script src="components/listCards.js"></script>
+<script src="components/slideshow.js"></script>
+<script src="components/contactForm.js"></script>
+
+</html>

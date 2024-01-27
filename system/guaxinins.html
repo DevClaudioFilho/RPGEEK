@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="styles/default.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="system/styles/styles.css">
+
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Components Styles -->
+  <link rel="stylesheet" href="styles/listCards.css">
+  <link rel="stylesheet" href="styles/clock.css">
+  <link rel="stylesheet" href="styles/slideshow.css">
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin="anonymous"></script>
+
+  <script src="components/index.js"></script>
+
+  <title>RPGeeks</title>
+</head>
+
+<body>
+  <header class="header_container">
+    <div class="content_container header_content">
+      <img src="assets/logos/logo.png" alt="Logo Game" />
+      <nav>
+        <ul id="list_links">
+          <li><a href="/">Home</a></li>
+          <li><a href="#system_about">Sobre</a></li>
+          <li><a href="#system_how_play">Como jogar</a></li>
+          <li><a href="#list_books">Livros</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon_nav" onclick="showHeader()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="ClocksComponents"></div>
+    <div id="page_system" systemId=3></div>
+  </main>
+
+  <footer class="footer_container">
+    <div class="content_container footer_content">
+      <nav>
+        <h2 class="title">
+          Navegação:
+        </h2>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#system_about">Sobre</a></li>
+          <li><a href="#system_how_play">Como jogar</a></li>
+          <li><a href="#list_books">Livros</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h2 class="title">
+          Redes Sociais:
+        </h2>
+        <ul>
+          <li><a href="https://www.instagram.com/claudio_martinss//">Instagram</a></li>
+          <li><a href="https://www.facebook.com/claudio.martins.39">Facebook</a></li>
+          <li><a href="https://wa.me/35961358647">WhatsApp</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h2 class="title">
+          Informações Uteis:
+        </h2>
+        <ul>
+          <li><a href="">Termos e Condições</a></li>
+          <li><a href="https://www.livroreclamacoes.pt/Inicio/">Livro de reclamações</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+<!-- React Components -->
+<script src="../components/clock.js"></script>
+<script src="../system/index.js"></script>
+
+</html>

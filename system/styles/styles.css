@@ -1,0 +1,45 @@
+#page_system>div{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+#page_system>div> img{
+  object-fit: cover;
+  object-position: top;
+  margin-top: -60px;
+  height: 600px;
+  width: 100%;
+}
+
+#page_system div section{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#page_system div .system_how_play div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+#page_system div  .system_how_play iframe{
+  margin: 0px;
+  padding: 0px;
+  height: 200px;
+  border: none;
+}
+
+#page_system div  .system_how_play .title{
+  text-align: right;
+}
+
+
+@media screen and (max-width: 650px){
+  #page_system div  .system_how_play div{
+    flex-direction: column;
+    text-align: center;
+  }
+}
