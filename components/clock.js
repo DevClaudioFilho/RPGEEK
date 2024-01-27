@@ -17,7 +17,7 @@ class Clock extends React.Component {
     var dir = loc.substring(0, loc.lastIndexOf('/'));
 
     let imgsrc = '/'
-    if (dir != '') {
+    if (dir != '' && dir != '/RPGEEK') {
       imgsrc = '../'
     }
 

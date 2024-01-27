@@ -7,7 +7,7 @@ class ListCard extends React.Component {
     var dir = loc.substring(0, loc.lastIndexOf('/'));
 
     let location = '/'
-    if (dir != '') {
+    if (dir != '' && dir != '/RPGEEK') {
       location = '../'
     }
 
