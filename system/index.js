@@ -4,7 +4,7 @@ class PageSystem extends React.Component {
     this.state = { system: {} };
     let systemId = document.getElementById('page_system').getAttribute("systemId")
 
-    fetch("/db/sytems.json")
+    fetch("../db/sytems.json")
       .then((response) => response.json())
       .then((data) => {
         this.setState({ system: data.systems[data.systems.findIndex((x) => x.id == systemId)] });

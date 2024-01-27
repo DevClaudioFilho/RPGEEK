@@ -1,7 +1,9 @@
 class Clock extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { datenow: '' };
+    let location = document.getElementById('ClocksComponents').getAttribute("systemLocation")
+
+    this.state = { datenow: '', location };
 
     setInterval(() => {
       var dateString = new Date().toLocaleString("en-US");
@@ -13,16 +15,8 @@ class Clock extends React.Component {
   }
 
   render() {
-    var loc = window.location.pathname;
-    var dir = loc.substring(0, loc.lastIndexOf('/'));
-
-    let imgsrc = '/'
-    if (dir != '' && dir != '/RPGEEK') {
-      imgsrc = '../'
-    }
-
     return React.createElement("div", { className: "clock_container" },
-      React.createElement("img", { src: `${imgsrc}assets/clock.svg` }, null),
+      React.createElement("img", { src: `${this.state.location}assets/clock.svg` }, null),
       React.createElement("span", null, this.state.datenow))
   }
 }
