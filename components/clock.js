@@ -13,8 +13,16 @@ class Clock extends React.Component {
   }
 
   render() {
+    var loc = window.location.pathname;
+    var dir = loc.substring(0, loc.lastIndexOf('/'));
+
+    let imgsrc = '/'
+    if (dir != '') {
+      imgsrc = '../'
+    }
+
     return React.createElement("div", { className: "clock_container" },
-      React.createElement("img", { src: "/assets/clock.svg" }, null),
+      React.createElement("img", { src: `${imgsrc}assets/clock.svg` }, null),
       React.createElement("span", null, this.state.datenow))
   }
 }

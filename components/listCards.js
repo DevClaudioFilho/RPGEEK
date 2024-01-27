@@ -3,7 +3,15 @@ class ListCard extends React.Component {
     super(props);
     this.state = { systems: [] };
 
-    fetch("/db/sytems.json", { mode: 'no-cors' })
+    var loc = window.location.pathname;
+    var dir = loc.substring(0, loc.lastIndexOf('/'));
+
+    let location = '/'
+    if (dir != '') {
+      location = '../'
+    }
+
+    fetch(`${location}db/sytems.json`, { mode: 'no-cors' })
       .then((response) => response.json())
       .then((data) => this.setState({
         systems: data.systems
